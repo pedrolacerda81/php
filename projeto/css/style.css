@@ -1,0 +1,166 @@
+body {
+	margin: 0;
+	font-family: 'Oswald', sans-serif;
+	background-color: lightgray;
+}
+/* HEADER */
+.cabecalho {
+	background: #333;
+	color: #fff;
+	border-bottom: solid 5px #4faddb;
+	height: 80px;
+	display: flex; /* main axis eh linha entao, estao em linha */
+	align-items: center; /* centralizando os itens da flexbox (no crossAxis) */
+	justify-content: space-between; /* espaco entre os itens da lista */
+}
+.cabecalho a {
+	text-decoration: none;
+	color: #eee;
+	font-size: 1.3em;
+	padding: 10px 15px;
+}
+.title {
+	padding: 0px 5px;
+}
+header h1 {
+	margin: 0;
+}
+/* MENU */
+.menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.menu a:hover, .title:hover, .menu a.selected {
+	background-color: #4faddb;
+	color: #000;
+}
+.menu {
+	flex-grow: 10;
+}
+.menu ul {
+	display: flex;
+	/* justify-content: space-around */
+}
+.menu li {
+	margin: 0px 10px;
+}
+/* SECTION */
+h3 {
+	text-align: left;
+	font-size: 24px;
+	margin-bottom: 2px;
+	letter-spacing: 1.5px;
+}
+section {
+	padding: 10px 75px 0px 75px;
+    min-height: 79.6vh;
+    text-align: center;
+}
+.index {
+	min-height: 73.2vh;
+}
+.edit {
+	min-height: 79.6vh;
+}
+/* PARAGRAFO */
+.resultado {
+	font-size: 40px;
+	border: solid 1px dodgerblue;
+	padding: 0px 10px;
+}
+/* FOOTER */
+footer {
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+	font-size: 12px;
+	color: #fff;
+	background-color: #444;
+	border-top: solid 3px dodgerblue;
+}
+/* FORMULARIO */
+form {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-direction: column;
+	font-size: 20px;
+}
+label {
+	font-size: 20px;
+}
+input[type = "reset"], input[type = "submit"] {
+	display: inline-block;
+	padding: 2px 10px 2px 10px;
+	margin: 5px 0px 0px 0px;
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+input[type = "submit"] {
+	background-color:#ffffff;
+	color:  dodgerblue;
+	border: dodgerblue solid 1px;
+}
+input[type = "submit"]:hover {
+	background-color: dodgerblue;
+	border: dodgerblue solid 1px;
+	color: #fff;
+	cursor: pointer;
+}
+input[type = "reset"] {
+	background-color:#fff;
+	color:  #b33c00;
+	border: #b33c00 solid 1px;
+}
+input[type = "reset"]:hover {
+	background-color: #b33c00;
+	border: #b33c00 solid 1px;
+	color: #fff;
+	cursor: pointer;
+}
+/* USUÁRIO */
+.user-div {
+	border: 1px solid dodgerblue;
+	background-color: #fff;
+	font-size: 18px;
+	display: inline-block;
+	padding: 5px 4px;
+	margin: 0px 4px 4px 0px;
+	border-radius: 4px;
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.user-div p {
+	margin: 5px 0px;
+}
+/* BOTÕES DO CARD CONTATOS */
+.user-controls {
+	float: right;
+	padding: 0px 0px 5px 0px;
+}
+.user-controls a {
+	text-decoration: none;
+	padding: 2px;
+	border-radius: 4px;
+	margin-right: 2px;
+}
+.alter {
+	border: 1px solid chartreuse;
+	background-color: chartreuse;
+	color: white;
+}
+.alter:hover {
+	color: chartreuse;
+	background-color: #fff;
+}
+.drop {
+	border: 1px solid chocolate;
+	background-color:chocolate;
+	color: white;
+}
+.drop:hover {
+	color: chocolate;
+	background-color: #fff;
+}
