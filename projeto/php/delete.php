@@ -1,6 +1,6 @@
 <?php
-include 'top.php';
-include 'connection.php';
+require 'top.php';
+require 'connection.php';
 
 $id = $_GET['id'];
 $query = "DELETE FROM tbl_cadastro WHERE id_cont = '$id';";
@@ -13,5 +13,5 @@ if($execute == true) {
     echo "<p class='resultado'>Erro ao apagar o contato.</p>";
     echo "<a href='users.php'>Voltar</a>";
 }
-include 'bottom.php';
+require 'bottom.php';
 ?>

@@ -1,11 +1,11 @@
 <?php 
-include 'connection.php';
+require 'connection.php';
     $query = "SELECT * FROM tbl_cadastro;";
     $execute = mysqli_query($link, $query);
 
     while($result = mysqli_fetch_assoc($execute)) {
         echo "<div class='user-div'>";
-        echo "<p><strong>Usuários:</strong> ".$result['nome_cont'];
+        echo "<p><strong>Usuário:</strong> ".$result['nome_cont'];
         echo "<br>";
         echo "<strong>Email:</strong> ".$result['email_cont']."</p>";
         echo "<hr>";

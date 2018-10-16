@@ -19,21 +19,24 @@ body {
 	font-size: 1.3em;
 	padding: 10px 15px;
 }
+.cabecalho a:hover {
+	background-color: #4faddb;
+	color: #000;
+}
 .title {
 	padding: 0px 5px;
 }
 header h1 {
 	margin: 0;
 }
+.auth-span {
+	margin-right: 5px;
+}
 /* MENU */
 .menu ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-}
-.menu a:hover, .title:hover, .menu a.selected {
-	background-color: #4faddb;
-	color: #000;
 }
 .menu {
 	flex-grow: 10;
@@ -54,7 +57,7 @@ h3 {
 }
 section {
 	padding: 10px 75px 0px 75px;
-    min-height: 79.6vh;
+	min-height: 79.6vh;
     text-align: center;
 }
 .index {
@@ -101,6 +104,7 @@ input[type = "reset"], input[type = "submit"] {
 }
 input[type = "submit"] {
 	background-color:#ffffff;
+	border-radius: 2px;
 	color:  dodgerblue;
 	border: dodgerblue solid 1px;
 }
@@ -112,6 +116,7 @@ input[type = "submit"]:hover {
 }
 input[type = "reset"] {
 	background-color:#fff;
+	border-radius: 2px;
 	color:  #b33c00;
 	border: #b33c00 solid 1px;
 }
@@ -147,6 +152,7 @@ input[type = "reset"]:hover {
 	margin-right: 2px;
 }
 .alter {
+	border-radius: 2px;
 	border: 1px solid chartreuse;
 	background-color: chartreuse;
 	color: white;
@@ -156,6 +162,7 @@ input[type = "reset"]:hover {
 	background-color: #fff;
 }
 .drop {
+	border-radius: 2px;
 	border: 1px solid chocolate;
 	background-color:chocolate;
 	color: white;

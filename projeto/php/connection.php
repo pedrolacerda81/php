@@ -4,6 +4,9 @@ $user = 'root';
 $password = '';
 $database = 'projeto_db';
 
-$link = mysqli_connect($host, $user, $password, $database) or die("Falha na conexão com o Banco de Dados.");
+$link = mysqli_connect($host, $user, $password, $database)
+        or die("Falha na conexão com o Banco de Dados.");
 
-mysqli_select_db($link, $database);
+mysqli_select_db($link, $database)
+        or die("Não consegui selecionar o Banco de Dados.");
+?>

@@ -1,8 +1,15 @@
-<?php include 'top.php' ?>
+<?php require 'top.php'; ?>
 <section>
-    <h3>Users</h3>
+    <h3>Usuários</h3>
     <hr>
-<?php include 'select.php' ?>
+    <?php
+				if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+					require 'select.php';
+				} else {
+                    echo "<p>Você deve se logar primeiro para ter acesso a está pagina.</p> <br>";
+					echo "<a href='login.php'>Entrar</a>";
+				}
+			?>
 <!-- 
     <div class="user-div">
     <p><strong>Usuários:</strong> Pedro Lacerda da Costa <br>
@@ -14,4 +21,4 @@
     </div>
 </div> 
 -->
-<?php include 'bottom.php' ?>
+<?php require 'bottom.php'; ?>

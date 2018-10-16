@@ -1,4 +1,4 @@
 </section>
-	<footer>Copyright - Pedro Lacerda da Costa</footer>
+	<footer> &#169 Pedro Lacerda da Costa</footer>
 </body>
 </html>
