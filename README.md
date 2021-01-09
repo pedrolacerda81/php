@@ -1,2 +1,2 @@
 # php
-Application with connection to a MySQL database with all its functionalities implemented.
+A SPA with connection to a MySQL database with all its functionalities implemented.
